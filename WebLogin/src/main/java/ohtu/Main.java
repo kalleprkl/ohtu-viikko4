@@ -18,6 +18,7 @@ public class Main {
     static AuthenticationService authService;
     
     public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "/home/perkoila/chromedriver");
         port(findOutPort());
               
         get("/", (request, response) -> {
